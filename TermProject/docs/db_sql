@@ -1,0 +1,19 @@
+// 데이터 베이스 연결
+mysql -uroot -papmsetup mysql
+
+// 데이터베이스 생성
+create database account_book;
+
+// 수입 테이블 생성
+​create table income(
+date date not null,
+money int not null,
+memo varchar(80),
+category char(15));
+
+// 지출 테이블 생성
+​create table outcome(
+date date not null,
+money int not null,
+memo varchar(80),
+category char(15));
